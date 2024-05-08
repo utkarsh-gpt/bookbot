@@ -5,6 +5,7 @@ def main():
     letterDict = get_letter_dict(text)
     sortedDict = sort_dict(letterDict)
     print(f"--- Begin report of {book_path} ---")
+    print(f"{wordCount} words found in this document",end="\n\n")
     for i in range(len(sortedDict)):
         print(f"The '{sortedDict[i]['letter']}' character was found {sortedDict[i]['num']} times",
         end="\n")
